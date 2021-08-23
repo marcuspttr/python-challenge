@@ -14,3 +14,9 @@ Second commit:
 - Was able to solve the required analysis; however, not very pleased with how I solved for the Average Change.
 - Had to move CSV data for bank into the main folder as I could not get the proper reference for filepath:
   - I want it to be filepath = os.path.join('..','Resources','budget_data.csv') but it was not registering.
+
+8/23/2021 10:09 am
+Third commit:
+- Wrote code for PyPoll vote analysis problem.
+- Was able to solve for the indicated analysis.
+- Similar issue and workaround for CSV data and filepath issues.
