@@ -20,3 +20,7 @@ Third commit:
 - Wrote code for PyPoll vote analysis problem.
 - Was able to solve for the indicated analysis.
 - Similar issue and workaround for CSV data and filepath issues.
+
+Current outstanding issues as of 8/23/2021, 10:11 am
+- Fix filepath problem to properly find data in Resource folders.
+- Both scenarios ask for results to be output to a .txt file.
