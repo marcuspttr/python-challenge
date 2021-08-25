@@ -27,6 +27,9 @@ with open(filepath,'r') as csvfile:
     previous = 0
     changes = []
     
+    #The output file will be used to collect all the printed text to be put into the .txt file.
+    output = []
+
     #As we read through each row of the banking information.
     for row in csvreader:
         
@@ -58,16 +61,32 @@ with open(filepath,'r') as csvfile:
     for monthly in changes:
         totalchange += monthly
 
+   
     #Printing all of the financial summary calculations.
+    #Each is followed by output.append where we are also adding the text for the .txt output file.
     print("Financial Analysis \n----------------------------")
+    output.append("Financial Analysis\n----------------------------")
     
     print(f"Total Months: {len(date)}")
-    
+    output.append(f"\nTotal Months: {len(date)}")
+
     print(f"Total: ${money}")
-    
+    output.append(f"\nTotal: ${money}")
+
     #Average change calculation, rounded to 2 decimals as it represents a dollar amount.
     print(f"Average Change: ${round(totalchange/len(changes),2)}")
-    
-    print(f"Greatest Increase in Profits: {greatdate} (${greatest})")
-    
+    output.append(f"\nAverage Change: ${round(totalchange/len(changes),2)}")
+
+
+    print(f"\nGreatest Increase in Profits: {greatdate} (${greatest})")
+    output.append(f"\nGreatest Increase in Profits: {greatdate} (${greatest})")
+
     print(f"Greatest Decrrease in Profits: {leastdate} (${least})")
+    output.append(f"\nGreatest Decrrease in Profits: {leastdate} (${least})")
+
+#Declaring the text file we will be making
+textfile = open("bank.txt",'w')
+
+#It's currently in a big list, so this will loop through it to print it out in the .txt file.
+for i in range(len(output)):
+    textfile.write(output[i])
