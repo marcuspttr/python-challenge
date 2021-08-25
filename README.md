@@ -26,8 +26,13 @@ Fourth commit:
 - Added code to both problems that allows them to output to a text file.
 - This has a similar pathing issue to the csv files.
 
+8/25/2021 6:45 am
+Fifth commit:
+- Added jupyter files to practice reading and writing data with pandas.
+- VERY rough copy so far, working on chunking the data and need to look into how to read through the rows to grab data (if that is even the proper approach).
 
-Current outstanding issues as of 8/24/2021, 6:17 pm
+Current outstanding issues as of 8/25/2021, 6:45 am
 - Fix filepath problem to properly find data in Resource folders.
-- Also need to fix text filepaths.
+- Also need to fix text filepaths. Update: Potentially fixed using: os.path.join('Resource/budget_data.csv') but I haven't tried it yet.
+- Figure out pandas. Just like, in general.
 
