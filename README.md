@@ -26,6 +26,7 @@ Fourth commit:
 - Added code to both problems that allows them to output to a text file.
 - This has a similar pathing issue to the csv files.
 
+
 Current outstanding issues as of 8/24/2021, 6:17 pm
 - Fix filepath problem to properly find data in Resource folders.
 - Also need to fix text filepaths.
