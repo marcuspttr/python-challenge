@@ -21,6 +21,13 @@ Third commit:
 - Was able to solve for the indicated analysis.
 - Similar issue and workaround for CSV data and filepath issues.
 
-Current outstanding issues as of 8/23/2021, 10:11 am
+8/24/2021 6:17 pm
+Fourth commit:
+- Added code to both problems that allows them to output to a text file.
+- This has a similar pathing issue to the csv files.
+
+
+Current outstanding issues as of 8/24/2021, 6:17 pm
 - Fix filepath problem to properly find data in Resource folders.
-- Both scenarios ask for results to be output to a .txt file.
+- Also need to fix text filepaths.
+
