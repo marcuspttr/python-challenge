@@ -31,8 +31,8 @@ Fifth commit:
 - Added jupyter files to practice reading and writing data with pandas.
 - VERY rough copy so far, working on chunking the data and need to look into how to read through the rows to grab data (if that is even the proper approach).
 
-Current outstanding issues as of 8/25/2021, 6:45 am
-- Fix filepath problem to properly find data in Resource folders.
-- Also need to fix text filepaths. Update: Potentially fixed using: os.path.join('Resource/budget_data.csv') but I haven't tried it yet.
-- Figure out pandas. Just like, in general.
+8/28/2021 1:00 pm 
+Sixth commit:
+- Fixed the opening text for files. Possibly. Seems like it's too specific to my computer.
+- Jupyter and Pandas in general was much easier and cleaner to work with, although I wasn't sure how to translate each calculation I had done with just Python.
 
