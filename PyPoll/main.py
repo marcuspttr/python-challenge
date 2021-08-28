@@ -2,7 +2,7 @@
 import os
 import csv
 
-filepath = os.path.join('election_data.csv')
+filepath = os.path.join('/Users/marcu/Desktop/Data_Class/python/python-challenge/PyPoll/Resources/election_data.csv')
 
 with open(filepath,'r') as csvfile:
     
@@ -53,10 +53,10 @@ with open(filepath,'r') as csvfile:
            winnervotes = candyvote
        
     print(f"-------------------------\nWinner: {winnername}\n-------------------------")
-    output.append("\n-------------------------\nWinner: {winnername}\n-------------------------")
+    output.append(f"\n-------------------------\nWinner: {winnername}\n-------------------------")
 
 #Declaring the text file we will be making
-textfile = open("election.txt",'w')
+textfile = open("/Users/marcu/Desktop/Data_Class/python/python-challenge/PyPoll/Resources/election.txt",'w')
 
 #It's currently in a big list, so this will loop through it to print it out in the .txt file.
 for i in range(len(output)):

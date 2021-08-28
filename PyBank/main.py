@@ -2,7 +2,7 @@
 import os
 import csv
 
-filepath = os.path.join('budget_data.csv')
+filepath = os.path.join('/Users/marcu/Desktop/Data_Class/python/python-challenge/PyBank/Resources/budget_data.csv')
 
 
 with open(filepath,'r') as csvfile:
@@ -85,7 +85,7 @@ with open(filepath,'r') as csvfile:
     output.append(f"\nGreatest Decrrease in Profits: {leastdate} (${least})")
 
 #Declaring the text file we will be making
-textfile = open("bank.txt",'w')
+textfile = open('/Users/marcu/Desktop/Data_Class/python/python-challenge/PyBank/Resources/bank.txt','w')
 
 #It's currently in a big list, so this will loop through it to print it out in the .txt file.
 for i in range(len(output)):
